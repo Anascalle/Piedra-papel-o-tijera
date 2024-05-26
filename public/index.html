@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock | Paper | Scissors</h1>
+    <div id="choices">
+        <button onclick="makeChoice('rock')"><img src="img/rock.png" alt="Rock"></button>
+        <button onclick="makeChoice('paper')"><img src="img/paper.png" alt="Paper"></button>
+        <button onclick="makeChoice('scissors')"><img src="img/scissors.png" alt="Scissors"></button>
+    </div>
+    <h2 id="role"></h2>
+    <h2>Resultado</h2>
+    <p id="result"></p>
+    <div id="board">
+        <img id="player1-choice" class="choice" src="img/p1.jpg" alt="Jugador 1">
+        <img id="player2-choice" class="choice" src="img/p2.png" alt="Jugador 2">
+    </div>
+    <h2>Puntajes</h2>
+    <pre id="scores"></pre>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
